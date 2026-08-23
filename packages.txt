@@ -1,0 +1,7 @@
+below are the packages listed that need to be installed, 
+you can paste this command in your terminal:
+
+
+sudo apt install kitty polybar compton feh rofi lxappearance xdotool autotiling xrdb
+
+
