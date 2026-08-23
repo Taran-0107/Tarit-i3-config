@@ -1,6 +1,8 @@
-echo installing config files
+#!/bin/bash
 
-SCRIPT_DIR="$(cd "$(dirname "$(BASH_SOURCE[0])")" && pwd)"
+echo installing config files...
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 
 mkdir -p ~/.config/kitty
@@ -16,4 +18,7 @@ cp $SCRIPT_DIR/configs/polybar.ini ~/.config/polybar/config.ini
 cp $SCRIPT_DIR/configs/kitty.conf ~/.config/kitty/kitty.conf
 cp $SCRIPT_DIR/configs/compton.conf ~/.config/compton/c.conf
 cp $SCRIPT_DIR/configs/i3config ~/.config/i3/config
+cp -r $SCRIPT_DIR/configs/wallpapers ~/wallpapers
 
+
+echo "config files installed! (0w0)"
