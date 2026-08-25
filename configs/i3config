@@ -90,6 +90,10 @@ bindsym $mod+d exec --no-startup-id rofi -show drun
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+#manage brightness
+bindsym XF86MonBrightnessUp exec brightnessctl s +10%
+
+bindsym XF86MonBrightnessDown exec brightnessctl s 10%-
 #open file manager
 bindsym $mod+q exec --no-startup-id nemo
 
