@@ -31,4 +31,6 @@ cp $SCRIPT_DIR/fonts/nerdfont.ttf ~/.local/share/fonts/nerdfont.ttf
 cp $SCRIPT_DIR/rofi/material.rasi ~/.local/share/rofi/themes/material.rasi
 cp -r $SCRIPT_DIR/cursors/. ~/.icons/
 cp $SCRIPT_DIR/configs/roficonfig.rasi ~/.config/rofi/config.rasi
+cp $SCRIPT_DIR/resources/.Xresources ~/.Xrsources
+
 echo "config files installed! (0w0)"
