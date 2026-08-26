@@ -12,7 +12,7 @@
 set $mod Mod4
 
 #set no border
-default_border pixel 2
+default_border pixel 0
 #gaps outer 15
 gaps inner 10
 smart_gaps on
