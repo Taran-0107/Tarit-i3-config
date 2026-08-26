@@ -4,6 +4,12 @@ echo installing config files...
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+mkdir -p $SCRIPT_DIR/configs
+mkdir -p $SCRIPT_DIR/rofi
+mkdir -p $SCRIPT_DIR/fonts
+mkdir -p $SCRIPT_DIR/cursors
+mkdir -p $SCRIPT_DIR/resources
+
 cp ~/.config/polybar/config.ini $SCRIPT_DIR/configs/polybar.ini
 cp ~/.config/kitty/kitty.conf $SCRIPT_DIR/configs/kitty.conf
 cp ~/.config/compton/c.conf $SCRIPT_DIR/configs/compton.conf
@@ -12,7 +18,7 @@ cp -r ~/wallpapers $SCRIPT_DIR/configs/wallpapers
 cp ~/.config/i3/move.sh $SCRIPT_DIR/configs/i3move.sh
 cp ~/.local/share/fonts/nerdfont.ttf $SCRIPT_DIR/fonts/nerdfont.ttf
 cp ~/.local/share/rofi/themes/material.rasi $SCRIPT_DIR/rofi/material.rasi
-cp -r ~/.icons/ $SCRIPT_DIR/cursors/.
+cp -r ~/.icons/. $SCRIPT_DIR/cursors/
 cp ~/.config/rofi/config.rasi $SCRIPT_DIR/configs/roficonfig.rasi
 cp ~/.Xrsources $SCRIPT_DIR/resources/.Xresources
 
