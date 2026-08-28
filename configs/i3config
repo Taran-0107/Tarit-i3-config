@@ -103,8 +103,8 @@ bindsym $mod+q exec --no-startup-id nemo
 #screenshot
 bindsym $mod+Print exec flameshot gui
 #move between workspaces
-bindsym $mod+m workspace next
-bindsym $mod+n workspace prev
+bindsym $mod+comma workspace prev
+bindsym $mod+period workspace next
 
 # change focus
 bindsym $mod+j focus left
