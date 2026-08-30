@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo installing config files...
+echo saving config files....
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
