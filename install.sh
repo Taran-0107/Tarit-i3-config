@@ -21,6 +21,7 @@ mkdir -p ~/.icons
 
 mkdir -p ~/.config/rofi
 
+cp $SCRIPT_DIR/configs/aips.sh ~/.config/aips.sh
 cp $SCRIPT_DIR/configs/polybar.ini ~/.config/polybar/config.ini
 cp $SCRIPT_DIR/configs/kitty.conf ~/.config/kitty/kitty.conf
 cp $SCRIPT_DIR/configs/compton.conf ~/.config/compton/c.conf

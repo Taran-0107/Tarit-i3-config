@@ -10,6 +10,8 @@ mkdir -p $SCRIPT_DIR/fonts
 mkdir -p $SCRIPT_DIR/cursors
 mkdir -p $SCRIPT_DIR/resources
 
+
+cp ~/.config/aips.sh $SCRIPT_DIR/configs/aips.sh
 cp ~/.config/polybar/config.ini $SCRIPT_DIR/configs/polybar.ini
 cp ~/.config/kitty/kitty.conf $SCRIPT_DIR/configs/kitty.conf
 cp ~/.config/compton/c.conf $SCRIPT_DIR/configs/compton.conf

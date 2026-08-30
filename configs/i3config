@@ -45,6 +45,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+#launch flameshot, for screenshots
+exec --no-startup-id flameshot
+
 #set screen resolution
 exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 
@@ -52,7 +55,8 @@ exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 exec --no-startup-id compton --config ~/.config/compton/c.conf
  
 #startup polybar
-exec --no-startup-id polybar -c ~/.config/polybar/config.ini
+exec_always --no-startup-id polybar-msg cmd restart
+
 
 #autotiling
 exec_always --no-startup-id autotiling 
@@ -64,8 +68,6 @@ exec --no-startup-id xrdb ~/.Xresources
 
 #turn on night light
 exec --no-startup-id redshift -O 5500
-#launch flameshot, for screenshots
-exec --no-startup-id flameshot
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -139,7 +141,7 @@ bindsym $mod+h split h
 bindsym $mod+v split v
 
 #switch microphone device
-bindsym $mod+m exec pactl set-source-port alsa_input.pci-0000_00_1f.3.analog-stereo analog-input-headset-mic
+bindsym $mod+m exec bash ~/.config/aips.sh
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
