@@ -2,6 +2,6 @@ below are the packages listed that need to be installed,
 you can paste this command in your terminal:
 
 
-sudo apt install kitty polybar compton feh rofi lxappearance xdotool autotiling xrdb pulseaudio pulseaudio-utils pavucontrol brightnessctl nemo lightdm vim gh github flameshot xinput snapd
+sudo apt install kitty polybar compton feh rofi lxappearance xdotool autotiling xrdb pulseaudio pulseaudio-utils pavucontrol brightnessctl nemo lightdm vim gh github flameshot xinput snapd redshift
 
 
