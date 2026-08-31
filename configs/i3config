@@ -67,7 +67,7 @@ exec_always --no-startup-id  ~/wallpapers/iter.sh
 exec --no-startup-id xrdb ~/.Xresources
 
 #turn on night light
-exec --no-startup-id redshift -O 5500
+exec --no-startup-id redshift -O 5000
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
