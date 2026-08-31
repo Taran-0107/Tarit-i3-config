@@ -1,7 +1,7 @@
 #!/bin/bash
 
 src=$(pactl get-default-source)
-
+mute=$(pactl get-source-mute @DEFAULT_SOURCE@ | awk '{print $2}')
 src_port=$(
     pactl list sources |
     awk "
@@ -12,11 +12,18 @@ src_port=$(
 )
 
 if [ "$src_port" = "analog-input-headset-mic" ]; then
-	pactl set-source-port $src analog-input-internal-mic
+	if [ "$mute" = "no" ]; then
+		echo "󰋎"
+	else
+		echo "󰋐"
+	fi
 else
-	pactl set-source-port $src analog-input-headset-mic
+	if [ "$mute" = "no" ]; then
+		echo "󰍬"
+	else
+		echo "󰍭"
+	fi
+
 fi
 
-
-
-#echo "$src $src_port"
+echo "$mute"

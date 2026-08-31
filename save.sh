@@ -11,6 +11,7 @@ mkdir -p $SCRIPT_DIR/cursors
 mkdir -p $SCRIPT_DIR/resources
 
 
+cp ~/.config/getauico.sh $SCRIPT_DIR/configs/getauico.sh
 cp ~/.config/aips.sh $SCRIPT_DIR/configs/aips.sh
 cp ~/.config/polybar/config.ini $SCRIPT_DIR/configs/polybar.ini
 cp ~/.config/kitty/kitty.conf $SCRIPT_DIR/configs/kitty.conf
