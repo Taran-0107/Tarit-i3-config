@@ -5,7 +5,8 @@ select=$(bash ~/.config/power/options.sh  | rofi -dmenu)
 case $select in
 
 	restart)
-		sudo reboot
+		systemctl reboot
+		echo hello
 		;;
 	
 	"log out")
@@ -14,7 +15,7 @@ case $select in
 
 	"power off")
 	
-		shutdown now
+		systemctl poweroff
 		;;
 	"sleep")
 		systemctl suspend
