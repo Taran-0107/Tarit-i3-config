@@ -11,6 +11,8 @@ mkdir -p $SCRIPT_DIR/cursors
 mkdir -p $SCRIPT_DIR/resources
 
 
+cp ~/.config/flameshot/flameshot.ini $SCRIPT_DIR/configs/flameshot.ini
+cp ~/.config/polybar/restart.sh $SCRIPT_DIR/configs/restart.sh
 cp ~/.config/getauico.sh $SCRIPT_DIR/configs/getauico.sh
 cp ~/.config/aips.sh $SCRIPT_DIR/configs/aips.sh
 cp ~/.config/polybar/config.ini $SCRIPT_DIR/configs/polybar.ini

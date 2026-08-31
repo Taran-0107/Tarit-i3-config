@@ -55,7 +55,7 @@ exec_always --no-startup-id xrandr --output Virtual1 --mode 1920x1080
 exec --no-startup-id compton --config ~/.config/compton/c.conf
  
 #startup polybar
-exec_always --no-startup-id polybar-msg cmd restart
+exec_always --no-startup-id bash ~/.config/polybar/restart.sh
 
 
 #autotiling

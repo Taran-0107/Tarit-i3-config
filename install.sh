@@ -21,6 +21,9 @@ mkdir -p ~/.icons
 
 mkdir -p ~/.config/rofi
 
+
+cp $SCRIPT_DIR/config/flameshot.ini  ~/.config/flameshot/flameshot.ini
+cp $SCRIPT_DIR/configs/restart.sh ~/.config/polybar/restart.sh
 cp $SCRIPT_DIR/configs/getauico.sh ~/.config/getauico.sh
 cp $SCRIPT_DIR/configs/aips.sh ~/.config/apis.sh
 cp $SCRIPT_DIR/configs/polybar.ini ~/.config/polybar/config.ini
