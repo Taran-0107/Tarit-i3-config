@@ -17,7 +17,7 @@ cp ~/.config/polybar/config.ini $SCRIPT_DIR/configs/polybar.ini
 cp ~/.config/kitty/kitty.conf $SCRIPT_DIR/configs/kitty.conf
 cp ~/.config/compton/c.conf $SCRIPT_DIR/configs/compton.conf
 cp ~/.config/i3/config $SCRIPT_DIR/configs/i3config
-cp -r ~/wallpapers $SCRIPT_DIR/configs/wallpapers
+cp -r ~/wallpapers/. $SCRIPT_DIR/configs/wallpapers/
 cp ~/.config/i3/move.sh $SCRIPT_DIR/configs/i3move.sh
 cp ~/.local/share/fonts/nerdfont.ttf $SCRIPT_DIR/fonts/nerdfont.ttf
 cp ~/.local/share/rofi/themes/material.rasi $SCRIPT_DIR/rofi/material.rasi
