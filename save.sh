@@ -11,6 +11,7 @@ mkdir -p $SCRIPT_DIR/cursors
 mkdir -p $SCRIPT_DIR/resources
 
 
+cp ~/.config/btop/btop.conf $SCRIPT_DIR/configs/btop.conf
 cp ~/.config/flameshot/flameshot.ini $SCRIPT_DIR/configs/flameshot.ini
 cp ~/.config/polybar/restart.sh $SCRIPT_DIR/configs/restart.sh
 cp ~/.config/getauico.sh $SCRIPT_DIR/configs/getauico.sh
