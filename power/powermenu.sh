@@ -8,7 +8,10 @@ case $select in
 		systemctl reboot
 		echo hello
 		;;
-	
+	"lock")
+		i3lock
+		;;
+
 	"log out")
 		i3-msg exit
 		;;

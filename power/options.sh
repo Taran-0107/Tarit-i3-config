@@ -2,6 +2,8 @@
 
 echo "power off"
 
+echo "lock"
+
 echo "log out"
 
 echo "restart"
