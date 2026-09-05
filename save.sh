@@ -11,6 +11,7 @@ mkdir -p $SCRIPT_DIR/cursors
 mkdir -p $SCRIPT_DIR/resources
 mkdir -p $SCRIPT_DIR/power
 
+cp ~/.vimrc $SCRIPT_DIR/configs/.vimrc
 cp -r ~/.config/power/. $SCRIPT_DIR/power/
 cp ~/.config/btop/btop.conf $SCRIPT_DIR/configs/btop.conf
 cp ~/.config/flameshot/flameshot.ini $SCRIPT_DIR/configs/flameshot.ini

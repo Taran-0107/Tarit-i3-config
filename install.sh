@@ -27,6 +27,7 @@ mkdir -p ~/.config/btop
 
 mkdir -p ~/.config/power
 
+cp $SCRIPT_DIR/configs/.vimrc  ~/.vimrc
 cp $SCRIPT_DIR/power/.  ~/.config/power/
 cp $SCRIPT_DIR/configs/btop.conf  ~/.config/btop/btop.conf
 cp $SCRIPT_DIR/configs/flameshot.ini  ~/.config/flameshot/flameshot.ini
